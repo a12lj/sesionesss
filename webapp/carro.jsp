@@ -12,8 +12,8 @@
 <!-- Estilos CSS -->
 <style>
     body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f3f4f6;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #e0aaff, #ffffff);
         color: #333;
         margin: 0;
         padding: 0;
@@ -26,9 +26,11 @@
     }
 
     h1 {
-        color: #6f42c1;
-        font-size: 2rem;
+        color: #6a1b9a;
+        font-size: 2.5rem;
+        font-weight: 600;
         margin-bottom: 20px;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
     }
 
     table {
@@ -36,13 +38,13 @@
         margin: 20px 0;
         border-collapse: collapse;
         background-color: #ffffff;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         overflow: hidden;
     }
 
     table, th, td {
-        border: 1px solid #ddd;
+        border: 1px solid #e0aaff;
     }
 
     th, td {
@@ -51,54 +53,63 @@
     }
 
     th {
-        background-color: #6f42c1;
-        color: white;
+        background-color: #e0aaff;
+        color: #6a1b9a;
+        font-weight: 600;
     }
 
     td {
         background-color: #f9f9f9;
+        color: #333;
     }
 
     tr:hover {
-        background-color: #f1f1f1;
+        background-color: #f2e6ff;
     }
 
     button {
-        background-color: #6f42c1;
-        color: white;
+        background-color: #6a1b9a;
+        color: #ffffff;
         border: none;
         padding: 12px 24px;
-        font-size: 1rem;
+        font-size: 1.1rem;
         cursor: pointer;
-        border-radius: 5px;
-        transition: background-color 0.3s;
+        border-radius: 6px;
+        transition: background-color 0.3s, transform 0.2s;
         display: inline-block;
+        font-weight: 600;
     }
 
     button:hover {
-        background-color: #5a32a3;
+        background-color: #9c4d99;
+        transform: scale(1.05);
     }
 
     p, a {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     a {
-        color: #6f42c1;
+        color: #6a1b9a;
         text-decoration: none;
         margin-top: 10px;
         display: inline-block;
+        font-weight: 600;
     }
 
     a:hover {
         text-decoration: underline;
+        color: #9c4d99;
     }
 
     .back-link {
         margin-top: 20px;
         font-size: 1.2rem;
+        color: #6a1b9a;
     }
 </style>
+
+
 
 <%
     // Definición del formateador de decimales (Ejemplo: 1500.00)
