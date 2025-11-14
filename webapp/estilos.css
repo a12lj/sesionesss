@@ -1,0 +1,92 @@
+/* ---------------------------------------------------------
+   💜 ESTILOS GENERALES DEL SISTEMA (estilos.css)
+--------------------------------------------------------- */
+
+:root {
+    --morado: #b794f4;
+    --morado-oscuro: #7c5cc4;
+    --morado-claro: #ede7f6;
+    --morado-fondo: #f6f0ff;
+    --texto: #3a3350;
+    --texto-suave: #5d5473;
+    --sombra: rgba(0, 0, 0, 0.10);
+}
+
+/* Fondo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--morado-fondo);
+    margin: 40px;
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: var(--morado-oscuro);
+    border-bottom: 3px solid var(--morado);
+    padding-bottom: 8px;
+    margin-bottom: 22px;
+}
+
+/* Enlaces */
+a {
+    color: var(--morado);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+a:hover {
+    color: var(--morado-oscuro);
+    text-decoration: underline;
+}
+
+/* Listas */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Tablas */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 6px 20px var(--sombra);
+}
+
+th {
+    background: var(--morado);
+    color: #fff;
+    padding: 14px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+    background: var(--morado-claro);
+}
+
+/* Mensajes de bienvenida */
+.bienvenida, .welcome-message {
+    padding: 14px 18px;
+    background: var(--morado-claro);
+    border-left: 5px solid var(--morado);
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--morado-oscuro);
+    box-shadow: 2px 2px 12px var(--sombra);
+}
