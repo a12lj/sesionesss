@@ -3,9 +3,6 @@ package filter;
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;
 import util.Conexion;
-import jakarta.servlet.http.HttpServletResponse;
-import services.Exception;
-import util.Conexion;
 
 import java.io.IOException;
 import java.sql.Connection;
